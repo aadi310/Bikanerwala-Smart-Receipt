@@ -76,6 +76,7 @@ const [selectedTags, setSelectedTags] = useState<string[]>([])
 const [couponToast, setCouponToast] = useState(false)
   const [itemFeedback, setItemFeedback] = useState({})
 const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
+  const [submittedItemFeedback, setSubmittedItemFeedback] = useState({})
   const [feedback, setFeedback] = useState({
     service: 0,
     quality: 0,
@@ -139,6 +140,25 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
   })
 }
 
+  const submitItemFeedback = (itemId) => {
+  const current = itemFeedback[itemId]
+
+  if (!current?.rating) {
+    alert("Please select a rating before submitting.")
+    return
+  }
+
+  setSubmittedItemFeedback((prev) => ({
+    ...prev,
+    [itemId]: current,
+  }))
+
+  // Optional: collapse the feedback card
+  setExpandedItemFeedback((prev) =>
+    prev.filter((id) => id !== itemId)
+  )
+}
+
   const customerName = "Sagar"
 
   // Carousel refs and APIs
@@ -159,6 +179,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
   useEffect(() => {
   setItemFeedback({})
   setExpandedItemFeedback([])
+  setSubmittedItemFeedback({})
 }, [currentReceiptId])
 
   // Simple auto-height for WordPress iframe
@@ -666,6 +687,7 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
   </div>
 </div>
           
+              {/* Purchase Details */}
           <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 p-4">
 
   <div className="flex items-center justify-between mb-4">
@@ -706,9 +728,29 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
         )}
 
         <div className="mt-3">
-          <button onClick={() => toggleItemFeedback(product.id)} className="text-xs text-[#FF7A3D] font-medium">
-            {expandedItemFeedback.includes(product.id) ? "Hide item feedback" : "Rate this item"}
-          </button>
+          {submittedItemFeedback[product.id] ? (
+  <div className="flex items-center justify-between mt-3">
+    <span className="text-xs font-medium text-green-600 flex items-center gap-1">
+      ✓ Feedback Submitted
+    </span>
+
+    <button
+      onClick={() => toggleItemFeedback(product.id)}
+      className="text-xs text-[#E32E00] font-medium"
+    >
+      Edit
+    </button>
+  </div>
+) : (
+  <button
+    onClick={() => toggleItemFeedback(product.id)}
+    className="text-xs text-[#FF7A3D] font-medium"
+  >
+    {expandedItemFeedback.includes(product.id)
+      ? "Hide item feedback"
+      : "Rate this item"}
+  </button>
+)}
         </div>
 
         {expandedItemFeedback.includes(product.id) && (
@@ -731,6 +773,14 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
                 )
               })}
             </div>
+            <div className="mt-4">
+  <button
+    onClick={() => submitItemFeedback(product.id)}
+    className="w-full bg-[#E32E00] hover:bg-[#c72800] text-white text-sm font-medium py-2.5 rounded-lg transition-colors"
+  >
+    Submit Feedback
+  </button>
+</div>
           </div>
         )}
       </div>
