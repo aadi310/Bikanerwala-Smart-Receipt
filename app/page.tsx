@@ -457,13 +457,11 @@ const receipts = {
   }
 
   const handleEmailReceipt = () => {
-    window.open(`mailto:?subject=Receipt from Taco Bell Bangalore&body=Receipt ID: ${currentReceipt.id}`)
-  }
+    window.open(`mailto:?subject=Receipt from Bikanervala&body=Order ID: ${currentReceipt.id}`)
+}
 
   const handleDownloadReceipt = () => {
     const receiptContent = `
-  const handleDownloadReceipt = () => {
-  const receiptContent = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -567,17 +565,18 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
 </body>
 </html>
   `
+
     const blob = new Blob([receiptContent], { type: "text/html" })
     const url = URL.createObjectURL(blob)
     const link = document.createElement("a")
     link.href = url
-    link.download = "Taco_Bell_Receipt_SK251107001.html"
+    link.download = `Bikanervala_Receipt_${currentReceipt.id}.html`
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
     URL.revokeObjectURL(url)
   }
-
+  
   const handleWhatsApp = () => {
     window.open("https://wa.me/+919620921294", "_blank")
   }
@@ -1306,15 +1305,12 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
       <div className="flex justify-between items-center p-4 border-b border-gray-100">
 
         <div className="flex items-center">
-
-          <div className="bg-[#702082] p-2 rounded-lg mr-3">
+          <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
             <History className="h-4 w-4 text-white" />
           </div>
-
           <h3 className="text-sm font-semibold text-gray-900">
             Order History
           </h3>
-
         </div>
 
         <button
@@ -1332,7 +1328,6 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
 
       </div>
 
-
       {/* Transaction List */}
       <div className="max-h-80 overflow-y-auto p-4 space-y-3">
 
@@ -1345,26 +1340,23 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
               setShowTransactionHistory(false)
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
-            className="w-full flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#702082] transition"
+            className="w-full flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#E32E00] transition"
           >
 
             <div className="bg-white border border-gray-200 p-2 rounded-lg mr-3">
-              <FileText className="h-4 w-4 text-[#702082]" />
+              <FileText className="h-4 w-4 text-[#E32E00]" />
             </div>
 
             <div className="flex-grow text-left">
-
               <div className="text-sm font-semibold text-gray-900">
-                Taco Bell
+                Bikanervala
               </div>
-
               <div className="text-[11px] text-gray-500">
                 {transaction.date}
               </div>
-
             </div>
 
-            <div className="text-sm font-semibold text-[#702082]">
+            <div className="text-sm font-semibold text-[#E32E00]">
               ₹{transaction.amount.toFixed(2)}
             </div>
 
