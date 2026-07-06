@@ -937,68 +937,7 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
       <p className="text-[10px] text-center text-gray-400">Your feedback helps Bikanervala improve every order.</p>
     </div>
   )}
-</div>
-          
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
-
-  <div className="flex items-center justify-between mb-4">
-    <div className="flex items-center">
-      <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
-        <Sparkles className="h-4 w-4 text-white" />
-      </div>
-      <h3 className="text-base font-semibold text-gray-900">Just for You</h3>
-    </div>
-  </div>
-
-  {couponToast && (
-    <div className="mb-3 text-center text-xs text-green-700 bg-green-50 border border-green-100 rounded-lg py-2">
-      ✓ Coupon copied
-    </div>
-  )}
-
-  <div className="space-y-3">
-
-    <button onClick={() => copyCoupon("SWEET100")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
-      <div className="flex items-center justify-between">
-        <div>
-          <h4 className="text-sm font-semibold text-gray-900">Flat ₹100 Off on Fresh Sweets</h4>
-          <p className="text-[11px] text-gray-500">On orders above ₹1499 · Use code <span className="font-bold text-[#E32E00]">SWEET100</span></p>
-        </div>
-        <div className="text-xl">🍡</div>
-      </div>
-    </button>
-
-    <button onClick={() => copyCoupon("FREESHIP")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
-      <div className="flex items-center justify-between">
-        <div>
-          <h4 className="text-sm font-semibold text-gray-900">Free Delivery Across India</h4>
-          <p className="text-[11px] text-gray-500">On orders above ₹1000 · Use code <span className="font-bold text-[#E32E00]">FREESHIP</span></p>
-        </div>
-        <div className="text-xl">🚚</div>
-      </div>
-    </button>
-
-    <button onClick={() => copyCoupon("HAMPER15")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
-      <div className="flex items-center justify-between">
-        <div>
-          <h4 className="text-sm font-semibold text-gray-900">Festive Hamper Special</h4>
-          <p className="text-[11px] text-gray-500">15% off curated gift hampers · Use code <span className="font-bold text-[#E32E00]">HAMPER15</span></p>
-        </div>
-        <div className="text-xl">🎁</div>
-      </div>
-    </button>
-
-  </div>
-
-  <a href="https://bikanervala.com/" target="_blank" rel="noopener noreferrer">
-    <button className="w-full mt-4 bg-[#E32E00] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]">
-      Order from Bikanervala
-    </button>
-  </a>
-
-  <p className="mt-2 text-[9px] text-center text-gray-400">Tap a coupon to copy the code. Offers may vary by location.</p>
-</div>
-          
+</div>          
          <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
   <div className="grid grid-cols-3 gap-3">
     <button ref={historyButtonRef} onClick={handleTransactionHistoryOpen}
@@ -1117,15 +1056,7 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
   <div className="text-center mt-3 pt-3 border-t border-gray-100">
   <div className="flex items-center justify-center space-x-1.5">
     <span className="text-xs text-gray-400 font-medium">Powered by</span>
-    <span
-      className="text-sm font-bold tracking-tight"
-      style={{
-        background: "linear-gradient(90deg, #20D39C 0%, #5AE2E2 100%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        backgroundClip: "text",
-      }}
-    >
+    <span className="text-sm font-bold tracking-tight" style={{ color: "#003323" }}>
       SmartBill
     </span>
   </div>
