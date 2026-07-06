@@ -824,90 +824,101 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
   )}
 </div>
           
-    {/* Big Bell Rewards */}
+    {/* Bikanervala Loaylty */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
   <div className="p-4">
 
+    {/* Header */}
     <div className="flex items-start mb-4">
       <div className="w-10 h-10 bg-[#E32E00] rounded-xl flex items-center justify-center mr-3">
         <Bell className="h-5 w-5 text-white" />
       </div>
       <div>
         <div className="text-lg font-semibold text-gray-900">Bikanervala Club</div>
-        <div className="text-xs text-gray-600">Earn Club Points on every purchase, in-store or online</div>
+        <div className="text-xs text-gray-600">India's largest restaurant retail loyalty programme</div>
       </div>
     </div>
 
-    <div className="grid grid-cols-3 gap-3 mb-4">
-      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
-        <div className="text-lg font-semibold text-[#E32E00]">+729</div>
-        <div className="text-xs text-gray-600">Points Earned</div>
+    {/* Points from this order */}
+    <div className="bg-[#FDF1EC] rounded-xl p-4 border border-[#F6D9CC] mb-4">
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="text-xs text-gray-600">Points earned on this order</div>
+          <div className="text-2xl font-semibold text-[#E32E00] mt-0.5">
+            +{Math.round(currentReceipt.subtotal)}
+          </div>
+        </div>
+        <div className="text-right">
+          <div className="text-xs text-gray-600">Your tier</div>
+          <div className="inline-flex items-center gap-1 mt-1 bg-white border border-[#E32E00] text-[#E32E00] text-xs font-semibold px-2.5 py-1 rounded-full">
+            🥇 Gold
+          </div>
+        </div>
       </div>
-      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
-        <div className="text-lg font-semibold text-[#E32E00]">8,400</div>
-        <div className="text-xs text-gray-600">Total Points</div>
-      </div>
-      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
-        <div className="text-lg font-semibold text-[#E32E00]">Gold</div>
-        <div className="text-xs text-gray-600">Current Tier</div>
-      </div>
-    </div>
-
-    <div className="bg-[#FDF1EC] rounded-xl p-4 border border-[#F6D9CC]">
-      <div className="flex justify-between text-xs text-gray-600 mb-2">
-        <span>Tier Progress</span>
-        <span>8,400 / 15,000 Points</span>
-      </div>
-      <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-        <div className="h-full bg-[#E32E00] rounded-full" style={{ width: "56%" }} />
-      </div>
-      <div className="text-xs text-gray-600 mt-2">
-        Only <span className="font-semibold text-[#E32E00]">6,600 points</span> away from Platinum tier.
+      <div className="text-[10px] text-gray-500 mt-2">
+        Calculated on the pre-tax bill value, as per Bikanervala Club rules.
       </div>
     </div>
 
-    <div className="mt-4">
-      <div className="text-sm font-semibold text-gray-900 mb-2">Tier Journey</div>
+    {/* Tier ladder — no invented thresholds, just the real tier names */}
+    <div className="mb-4">
+      <div className="text-sm font-semibold text-gray-900 mb-2">Membership Tiers</div>
+      <div className="text-[11px] text-gray-500 mb-3">
+        Your tier is determined by your total spend across Bikanervala outlets and websites.
+      </div>
       <div className="flex items-center justify-between text-center text-xs">
         <div className="flex flex-col items-center">
           <div className="w-8 h-8 rounded-full bg-[#E32E00] text-white flex items-center justify-center">✓</div>
           <div className="mt-1">Silver</div>
-          <div className="text-[10px] text-gray-500">Enroll</div>
         </div>
         <div className="flex-1 h-[2px] bg-[#E32E00] mx-2"></div>
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#E32E00] text-white flex items-center justify-center">✓</div>
-          <div className="mt-1">Gold</div>
-          <div className="text-[10px] text-gray-500">5,000</div>
+          <div className="w-9 h-9 rounded-full bg-[#E32E00] text-white flex items-center justify-center ring-2 ring-offset-2 ring-[#E32E00]">🥇</div>
+          <div className="mt-1 font-semibold">Gold</div>
         </div>
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#E32E00] text-[#E32E00] flex items-center justify-center">◆</div>
-          <div className="mt-1">Platinum</div>
-          <div className="text-[10px] text-gray-500">15,000</div>
+          <div className="w-8 h-8 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">◆</div>
+          <div className="mt-1 text-gray-400">Platinum</div>
         </div>
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#E32E00] text-[#E32E00] flex items-center justify-center">💎</div>
-          <div className="mt-1">Diamond</div>
-          <div className="text-[10px] text-gray-500">30,000</div>
+          <div className="w-8 h-8 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">💎</div>
+          <div className="mt-1 text-gray-400">Diamond</div>
         </div>
       </div>
     </div>
 
-    <div className="mt-4 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-      Earn <span className="font-semibold">1 Club Point for every ₹1</span> spent on non-discounted bills (excluding taxes). Points are worth ₹1 each and are valid for 12 months from the date of credit.
+    {/* How it works — pulled straight from their published T&Cs */}
+    <div className="space-y-2 mb-4">
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
+        <span className="text-[#E32E00] font-semibold shrink-0">1 Point = ₹1</span>
+        <span>Earned on non-discounted bills, calculated on value excluding tax, delivery, and packing charges.</span>
+      </div>
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
+        <span className="text-[#E32E00] font-semibold shrink-0">No minimum</span>
+        <span>Redeem points for any amount starting from ₹1 — no minimum or maximum limit.</span>
+      </div>
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
+        <span className="text-[#E32E00] font-semibold shrink-0">12-month validity</span>
+        <span>Points lapse automatically 12 months after the date of credit if unused.</span>
+      </div>
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
+        <span className="text-[#E32E00] font-semibold shrink-0">Mobile-linked</span>
+        <span>Just quote your registered mobile number at billing to earn or redeem — no card, no app required.</span>
+      </div>
     </div>
 
-    <div className="mt-4">
+    <div>
       <a href="https://bikanervala.com/pages/loyalty" target="_blank" rel="noopener noreferrer"
         className="block w-full text-center bg-[#E32E00] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition">
-        View Bikanervala Club
+        View Bikanervala Club Terms
       </a>
     </div>
   </div>
 </div>
-          
+            {/* Bikanervala Promo Banners */}
+  
           <div className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden mx-3 mt-4 relative font-poppins">
 
   <Carousel className="w-full" setApi={setPromoApi} opts={{ loop: true }}>
