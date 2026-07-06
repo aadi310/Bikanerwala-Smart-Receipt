@@ -707,7 +707,7 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
 
         <div className="mt-3">
           <button onClick={() => toggleItemFeedback(product.id)} className="text-xs text-[#FF7A3D] font-medium">
-            {expandedItemFeedback.includes(product.id) ? "Hide item feedback" : "Rate this mithai"}
+            {expandedItemFeedback.includes(product.id) ? "Hide item feedback" : "Rate this item"}
           </button>
         </div>
 
