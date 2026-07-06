@@ -198,173 +198,166 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
 
 const receipts = {
   current: {
-    id: "TBBLR7891XQ12",
+    id: "BKNVLDEL7891XQ",
     date: "05-03-2026",
     time: "19:22:18",
     associate: "Rahul Kumar",
-    branch: "SJR Koramangala",
+    branch: "Shakurpur, New Delhi",
     items: [
       {
         id: 0,
-        name: "Crispy Potato Taco",
-        size: "Regular",
-        description:
-          "Crispy potato bites with lettuce, chipotle sauce and soft taco shell",
-        price: 99,
-        quantity: 2,
-        category: "Tacos",
-        taxApplicable: true,
-        baseAmount: 188,
-        tax: 10,
-        itemCode: "TB101",
-        type: "Veg",
-      },
-      {
-        id: 1,
-        name: "Crispy Chicken Wrap",
-        size: "Regular",
-        description:
-          "Crispy chicken with lettuce, jalapeno sauce and soft tortilla wrap",
-        price: 179,
-        quantity: 1,
-        category: "Wraps",
-        taxApplicable: true,
-        baseAmount: 170,
-        tax: 9,
-        itemCode: "TB210",
-        type: "Chicken",
-      },
-      {
-        id: 2,
-        name: "Nachos with Cheese",
-        size: "Regular",
-        description:
-          "Crunchy tortilla nachos served with warm cheesy dip",
-        price: 119,
-        quantity: 1,
-        category: "Sides",
-        taxApplicable: true,
-        baseAmount: 113,
-        tax: 6,
-        itemCode: "TB330",
-      },
-    ],
-    subtotal: 471,
-    tax: 25,
-    total: 496,
-  },
-
-  hist1: {
-    id: "TBBLR6719YT92",
-    date: "20-01-2026",
-    time: "14:22:18",
-    associate: "Anita Sharma",
-    branch: "Indiranagar",
-    items: [
-      {
-        id: 0,
-        name: "Naked Chicken Taco",
-        size: "Regular",
-        description:
-          "Crispy chicken shell taco filled with lettuce, cheese and chipotle sauce",
-        price: 189,
-        quantity: 1,
-        category: "Tacos",
-        taxApplicable: true,
-        baseAmount: 180,
-        tax: 9,
-        itemCode: "TB401",
-        type: "Chicken",
-      },
-      {
-        id: 1,
-        name: "Big Bell Box (Veg)",
-        size: "Combo",
-        description:
-          "Veg taco, rice bowl, nachos and beverage combo meal",
+        name: "Kaju Katli",
+        size: "250g",
+        description: "Premium cashew mithai, diamond-cut and finished with edible silver warq",
         price: 399,
         quantity: 1,
-        category: "Combos",
+        category: "Sweets",
         taxApplicable: true,
         baseAmount: 380,
         tax: 19,
-        itemCode: "TB520",
-        type: "Veg",
-      },
-      {
-        id: 2,
-        name: "Pepsi",
-        size: "500ml",
-        description: "Chilled Pepsi soft drink",
-        price: 60,
-        quantity: 1,
-        category: "Beverages",
-        taxApplicable: true,
-        baseAmount: 57,
-        tax: 3,
-        itemCode: "TB610",
-      },
-    ],
-    subtotal: 617,
-    tax: 31,
-    total: 648,
-  },
-
-  hist2: {
-    id: "TBBLR5590LP33",
-    date: "15-12-2025",
-    time: "12:45:33",
-    associate: "Sanjay Reddy",
-    branch: "Brigade Road",
-    items: [
-      {
-        id: 0,
-        name: "Veg Rice Bowl",
-        size: "Regular",
-        description:
-          "Mexican rice bowl with beans, salsa, lettuce and creamy sauce",
-        price: 199,
-        quantity: 1,
-        category: "Bowls",
-        taxApplicable: true,
-        baseAmount: 190,
-        tax: 9,
-        itemCode: "TB720",
+        itemCode: "BKV101",
         type: "Veg",
       },
       {
         id: 1,
-        name: "Crispy Chicken Taco",
-        size: "Regular",
-        description:
-          "Crunchy taco with crispy chicken, lettuce and creamy jalapeno sauce",
-        price: 119,
-        quantity: 2,
-        category: "Tacos",
+        name: "Soan Papdi",
+        size: "400g",
+        description: "Flaky, melt-in-mouth gram flour and ghee sweet with cardamom",
+        price: 150,
+        quantity: 1,
+        category: "Sweets",
         taxApplicable: true,
-        baseAmount: 226,
-        tax: 12,
-        itemCode: "TB830",
-        type: "Chicken",
+        baseAmount: 143,
+        tax: 7,
+        itemCode: "BKV205",
+        type: "Veg",
       },
       {
         id: 2,
-        name: "Choco Quesadilla Dessert",
-        size: "Single",
-        description:
-          "Warm tortilla filled with melted chocolate dessert filling",
-        price: 129,
-        quantity: 1,
-        category: "Desserts",
+        name: "Bikaneri Bhujia",
+        size: "200g",
+        description: "The original Bikaner-style crispy gram flour namkeen",
+        price: 90,
+        quantity: 2,
+        category: "Namkeen",
         taxApplicable: true,
-        baseAmount: 123,
-        tax: 6,
-        itemCode: "TB910",
+        baseAmount: 171,
+        tax: 9,
+        itemCode: "BKV310",
+        type: "Veg",
       },
     ],
-    subtotal: 539,
-    tax: 27,
-    total: 566,
+    subtotal: 729,
+    tax: 36,
+    total: 765,
+  },
+
+  hist1: {
+    id: "BKNVLDEL6719YT",
+    date: "20-01-2026",
+    time: "14:22:18",
+    associate: "Anita Sharma",
+    branch: "Rajouri Garden, New Delhi",
+    items: [
+      {
+        id: 0,
+        name: "Motichoor Laddu",
+        size: "400g",
+        description: "Fine besan pearls bound in sugar syrup with cardamom and dry fruits",
+        price: 220,
+        quantity: 1,
+        category: "Sweets",
+        taxApplicable: true,
+        baseAmount: 210,
+        tax: 10,
+        itemCode: "BKV118",
+        type: "Veg",
+      },
+      {
+        id: 1,
+        name: "Rasgulla",
+        size: "1 Kg Tin",
+        description: "Soft spongy chenna balls soaked in light sugar syrup",
+        price: 210,
+        quantity: 1,
+        category: "Sweets",
+        taxApplicable: true,
+        baseAmount: 200,
+        tax: 10,
+        itemCode: "BKV225",
+        type: "Veg",
+      },
+      {
+        id: 2,
+        name: "Namkeen Mixture",
+        size: "200g",
+        description: "Classic Bikano-style crunchy mixture of lentils, nuts and sev",
+        price: 85,
+        quantity: 1,
+        category: "Namkeen",
+        taxApplicable: true,
+        baseAmount: 81,
+        tax: 4,
+        itemCode: "BKV340",
+      },
+    ],
+    subtotal: 515,
+    tax: 26,
+    total: 541,
+  },
+
+  hist2: {
+    id: "BKNVLDEL5590LP",
+    date: "15-12-2025",
+    time: "12:45:33",
+    associate: "Sanjay Reddy",
+    branch: "Naraina, New Delhi",
+    items: [
+      {
+        id: 0,
+        name: "Moong Dal Halwa",
+        size: "500g",
+        description: "Slow-cooked lentil halwa in pure desi ghee, a Bikanervala signature",
+        price: 340,
+        quantity: 1,
+        category: "Sweets",
+        taxApplicable: true,
+        baseAmount: 324,
+        tax: 16,
+        itemCode: "BKV142",
+        type: "Veg",
+      },
+      {
+        id: 1,
+        name: "Gulab Jamun",
+        size: "1 Kg",
+        description: "Soft khoya dumplings soaked in rose-cardamom sugar syrup",
+        price: 230,
+        quantity: 1,
+        category: "Sweets",
+        taxApplicable: true,
+        baseAmount: 219,
+        tax: 11,
+        itemCode: "BKV256",
+        type: "Veg",
+      },
+      {
+        id: 2,
+        name: "Aloo Bhujia",
+        size: "200g",
+        description: "Spicy potato and gram flour sev, a namkeen classic",
+        price: 80,
+        quantity: 1,
+        category: "Namkeen",
+        taxApplicable: true,
+        baseAmount: 76,
+        tax: 4,
+        itemCode: "BKV365",
+      },
+    ],
+    subtotal: 650,
+    tax: 33,
+    total: 683,
   },
 };
   
@@ -373,15 +366,15 @@ const receipts = {
   const totalSlides = 2
 
   const transactionHistory = [
-    {
-      id: "current",
-      date: "05-03-2026",
-      branch: "Domino's",
-      amount: currentReceiptId === "current" ? receipts.current.subtotal + receipts.current.tax : 496.00,
-    },
-    { id: "hist1", date: "20-01-2026", branch: "Domino's", amount: 648.00 },
-    { id: "hist2", date: "15-12-2025", branch: "Domino's", amount: 566.00 },
-  ]
+  {
+    id: "current",
+    date: "05-03-2026",
+    branch: "Bikanervala",
+    amount: currentReceiptId === "current" ? receipts.current.subtotal + receipts.current.tax : 765.00,
+  },
+  { id: "hist1", date: "20-01-2026", branch: "Bikanervala", amount: 541.00 },
+  { id: "hist2", date: "15-12-2025", branch: "Bikanervala", amount: 683.00 },
+]
 
   const toggleProductExpansion = (productId: number) => {
     setExpandedProducts((prev) =>
@@ -469,308 +462,111 @@ const receipts = {
 
   const handleDownloadReceipt = () => {
     const receiptContent = `
-  <!DOCTYPE html>
+  const handleDownloadReceipt = () => {
+  const receiptContent = `
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Taco Bell Digital Receipt</title>
-
+<title>Bikanervala Digital Receipt</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-font-size:14px;
-color:#111;
-background:#fff;
-width:800px;
-margin:0 auto;
-padding:24px;
-}
-
-/* Header */
-
-.receipt-header{
-display:flex;
-justify-content:space-between;
-align-items:flex-start;
-margin-bottom:28px;
-padding-bottom:16px;
-border-bottom:3px solid #702082;
-}
-
-.company-info h1{
-font-size:30px;
-color:#702082;
-font-weight:700;
-margin-bottom:4px;
-}
-
-.company-info p{
-font-size:12px;
-color:#555;
-line-height:1.4;
-}
-
-.bill-info{
-text-align:right;
-font-size:12px;
-}
-
-.bill-info div{
-margin-bottom:4px;
-}
-
-.bill-id{
-font-weight:600;
-color:#702082;
-}
-
-/* Guest section */
-
-.customer-section{
-background:#F7F2FA;
-padding:14px;
-border-left:4px solid #702082;
-border-radius:0 8px 8px 0;
-margin-bottom:22px;
-}
-
-.customer-section h3{
-font-size:15px;
-color:#702082;
-font-weight:600;
-margin-bottom:2px;
-}
-
-.customer-section p{
-font-size:12px;
-color:#666;
-}
-
-/* Table */
-
-.items-table{
-width:100%;
-border-collapse:collapse;
-margin-bottom:24px;
-}
-
-.items-table th{
-background:#702082;
-color:white;
-padding:10px 8px;
-text-align:left;
-font-size:11px;
-text-transform:uppercase;
-letter-spacing:0.5px;
-}
-
-.items-table td{
-padding:12px 8px;
-border-bottom:1px solid #eee;
-font-size:12px;
-vertical-align:top;
-}
-
-.item-name{
-font-weight:600;
-margin-bottom:3px;
-}
-
-.item-desc{
-font-size:11px;
-color:#666;
-}
-
-.item-specs{
-font-size:10px;
-color:#702082;
-margin-top:4px;
-font-weight:600;
-}
-
-/* Totals */
-
-.totals-section{
-display:flex;
-justify-content:space-between;
-margin-bottom:20px;
-}
-
-.items-count{
-font-weight:600;
-}
-
-.totals-table{
-text-align:right;
-min-width:200px;
-}
-
-.totals-table div{
-margin-bottom:6px;
-font-size:13px;
-}
-
-.net-total{
-font-size:18px;
-font-weight:700;
-color:#702082;
-border-top:2px solid #702082;
-padding-top:6px;
-margin-top:6px;
-}
-
-/* Footer */
-
-.footer{
-text-align:center;
-margin-top:30px;
-padding-top:20px;
-border-top:1px dashed #ccc;
-font-size:12px;
-color:#555;
-}
-
-.footer strong{
-color:#702082;
-}
-
-.powered{
-margin-top:10px;
-font-size:10px;
-color:#999;
-font-weight:600;
-}
-
-@media print{
-body{
--webkit-print-color-adjust:exact;
-width:100%;
-padding:0;
-}
-}
-
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;width:800px;margin:0 auto;padding:24px;}
+.receipt-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;padding-bottom:16px;border-bottom:3px solid #E32E00;}
+.company-info h1{font-size:30px;color:#E32E00;font-weight:700;margin-bottom:4px;}
+.company-info p{font-size:12px;color:#555;line-height:1.4;}
+.bill-info{text-align:right;font-size:12px;}
+.bill-info div{margin-bottom:4px;}
+.bill-id{font-weight:600;color:#E32E00;}
+.customer-section{background:#FDF1EC;padding:14px;border-left:4px solid #E32E00;border-radius:0 8px 8px 0;margin-bottom:22px;}
+.customer-section h3{font-size:15px;color:#E32E00;font-weight:600;margin-bottom:2px;}
+.customer-section p{font-size:12px;color:#666;}
+.items-table{width:100%;border-collapse:collapse;margin-bottom:24px;}
+.items-table th{background:#E32E00;color:white;padding:10px 8px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;}
+.items-table td{padding:12px 8px;border-bottom:1px solid #eee;font-size:12px;vertical-align:top;}
+.item-name{font-weight:600;margin-bottom:3px;}
+.item-desc{font-size:11px;color:#666;}
+.item-specs{font-size:10px;color:#E32E00;margin-top:4px;font-weight:600;}
+.totals-section{display:flex;justify-content:space-between;margin-bottom:20px;}
+.items-count{font-weight:600;}
+.totals-table{text-align:right;min-width:200px;}
+.totals-table div{margin-bottom:6px;font-size:13px;}
+.net-total{font-size:18px;font-weight:700;color:#E32E00;border-top:2px solid #E32E00;padding-top:6px;margin-top:6px;}
+.footer{text-align:center;margin-top:30px;padding-top:20px;border-top:1px dashed #ccc;font-size:12px;color:#555;}
+.footer strong{color:#E32E00;}
+.powered{margin-top:10px;font-size:10px;color:#999;font-weight:600;}
+@media print{body{-webkit-print-color-adjust:exact;width:100%;padding:0;}}
 </style>
 </head>
-
 <body>
 
 <div class="receipt-header">
-
-<div class="company-info">
-<h1>Taco Bell</h1>
-<p>
-<strong>Taco Bell India</strong><br>
-SJR Koramangala<br>
-Sony World Junction Plot 36<br>
-100 Feet Rd, Koramangala<br>
-Bengaluru, Karnataka 560095
-</p>
-</div>
-
-<div class="bill-info">
-<div><strong>Order ID:</strong> <span class="bill-id">TBBLR7891XQ12</span></div>
-<div><strong>Date:</strong> 05-03-2026 19:22</div>
-<div><strong>Store Associate:</strong> Rahul Kumar</div>
-</div>
-
+  <div class="company-info">
+    <h1>Bikanervala</h1>
+    <p>
+      <strong>Bikanervala Foods Pvt. Ltd.</strong><br>
+      A-28, Lawrence Road Industrial Area<br>
+      Keshav Puram, Shakurpur<br>
+      New Delhi, Delhi 110035
+    </p>
+  </div>
+  <div class="bill-info">
+    <div><strong>Order ID:</strong> <span class="bill-id">${currentReceipt.id}</span></div>
+    <div><strong>Date:</strong> ${currentReceipt.date} ${currentReceipt.time}</div>
+    <div><strong>Store Associate:</strong> ${currentReceipt.associate}</div>
+  </div>
 </div>
 
 <div class="customer-section">
-<h3>Customer: ${customerName}</h3>
-<p>Thanks for enjoying Taco Bell with us!</p>
+  <h3>Customer: ${customerName}</h3>
+  <p>Thanks for enjoying Bikanervala with us!</p>
 </div>
 
 <table class="items-table">
-
-<thead>
-<tr>
-<th style="width:50%">Menu Item</th>
-<th style="width:10%">Qty</th>
-<th style="width:15%">Size</th>
-<th style="width:12%">Price</th>
-<th style="width:13%">Total</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>
-<div class="item-name">Crispy Potato Taco</div>
-<div class="item-desc">Crispy potato bites with lettuce & chipotle sauce in a soft taco</div>
-<div class="item-specs">Type: Veg Taco</div>
-</td>
-<td>2</td>
-<td>Regular</td>
-<td>₹99</td>
-<td><strong>₹198</strong></td>
-</tr>
-
-<tr>
-<td>
-<div class="item-name">Crispy Chicken Wrap</div>
-<div class="item-desc">Crispy chicken with lettuce and jalapeno sauce in a tortilla wrap</div>
-<div class="item-specs">Wrap</div>
-</td>
-<td>1</td>
-<td>Regular</td>
-<td>₹179</td>
-<td><strong>₹179</strong></td>
-</tr>
-
-<tr>
-<td>
-<div class="item-name">Nachos with Cheese</div>
-<div class="item-desc">Crunchy tortilla nachos served with warm cheesy dip</div>
-<div class="item-specs">Side</div>
-</td>
-<td>1</td>
-<td>Regular</td>
-<td>₹119</td>
-<td><strong>₹119</strong></td>
-</tr>
-
-</tbody>
+  <thead>
+    <tr>
+      <th style="width:50%">Product</th>
+      <th style="width:10%">Qty</th>
+      <th style="width:15%">Size</th>
+      <th style="width:12%">Price</th>
+      <th style="width:13%">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    ${currentReceipt.items.map(item => `
+    <tr>
+      <td>
+        <div class="item-name">${item.name}</div>
+        <div class="item-desc">${item.description}</div>
+        <div class="item-specs">${item.category}</div>
+      </td>
+      <td>${item.quantity}</td>
+      <td>${item.size}</td>
+      <td>₹${item.price}</td>
+      <td><strong>₹${(item.price * item.quantity).toFixed(2)}</strong></td>
+    </tr>`).join('')}
+  </tbody>
 </table>
 
 <div class="totals-section">
-
-<div class="items-count">
-Items Ordered: 3
-</div>
-
-<div class="totals-table">
-<div>Subtotal: <strong>₹471</strong></div>
-<div>GST (5%): <strong>₹25</strong></div>
-<div class="net-total">Total: <strong>₹496</strong></div>
-</div>
-
+  <div class="items-count">Items Ordered: ${currentReceipt.items.length}</div>
+  <div class="totals-table">
+    <div>Subtotal: <strong>₹${currentReceipt.subtotal.toFixed(2)}</strong></div>
+    <div>GST (5%): <strong>₹${currentReceipt.tax.toFixed(2)}</strong></div>
+    <div class="net-total">Total: <strong>₹${currentReceipt.total.toFixed(2)}</strong></div>
+  </div>
 </div>
 
 <div class="footer">
-
-<p><strong>Gracias! See you again at Taco Bell.</strong></p>
-<p>Order again at www.tacobell.co.in</p>
-
-<div class="powered">
-Powered by RDEP
-</div>
-
+  <p><strong>Dhanyawad! See you again at Bikanervala.</strong></p>
+  <p>Order again at www.bikanervala.com</p>
+  <div class="powered">Powered by RDEP</div>
 </div>
 
 </body>
 </html>
-    `
-
+  `
     const blob = new Blob([receiptContent], { type: "text/html" })
     const url = URL.createObjectURL(blob)
     const link = document.createElement("a")
@@ -809,16 +605,16 @@ Powered by RDEP
 
          {/* Top Section */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
-  
+
   {/* Header */}
-  <div className="bg-[#702082] px-5 pt-5 pb-6 text-white">
+  <div className="bg-[#E32E00] px-5 pt-5 pb-6 text-white">
     <div className="flex items-start justify-between">
-      
-      {/* Taco Bell Logo */}
+
+      {/* Bikanervala Logo */}
       <img
-        src="/images/design-mode/taco-bell-logo.png"
-        alt="Taco Bell"
-        className="h-16 w-auto"
+        src="/images/design-mode/Bikanervala_Logo.png"
+        alt="Bikanervala"
+        className="h-14 w-auto bg-white rounded-lg p-1.5"
       />
 
       {/* QR */}
@@ -835,15 +631,15 @@ Powered by RDEP
     {/* Greeting */}
     <div className="mt-3">
       <div className="text-lg font-semibold">
-        Hola {customerName}
+        Namaste {customerName}
       </div>
       <div className="text-sm opacity-90">
-        Your Taco Bell order is confirmed
+        Your Bikanervala order is confirmed
       </div>
     </div>
 
     {/* Amount */}
-    <div className="mt-4 bg-[#A445B2] rounded-xl p-4 flex justify-between items-center">
+    <div className="mt-4 bg-[#FF7A3D] rounded-xl p-4 flex justify-between items-center">
       <div>
         <div className="text-xs opacity-80">
           Amount Paid
@@ -859,1204 +655,551 @@ Powered by RDEP
   {/* Receipt Metadata */}
   <div className="p-4 bg-white">
     <div className="bg-gray-50 rounded-xl border border-gray-200 p-3 space-y-2">
-
-      {/* Order ID */}
       <div className="flex justify-between items-center">
-        <span className="text-xs text-gray-500">
-          Order ID:
-        </span>
-        <span className="text-sm font-semibold tracking-wide text-right">
-          {currentReceipt.id}
-        </span>
+        <span className="text-xs text-gray-500">Order ID:</span>
+        <span className="text-sm font-semibold tracking-wide text-right">{currentReceipt.id}</span>
       </div>
-
-      {/* Date & Time */}
       <div className="flex justify-between items-center">
-        <span className="text-xs text-gray-500">
-          Order Time:
-        </span>
-        <span className="text-sm font-semibold text-right">
-          {currentReceipt.date} {currentReceipt.time}
-        </span>
+        <span className="text-xs text-gray-500">Order Time:</span>
+        <span className="text-sm font-semibold text-right">{currentReceipt.date} {currentReceipt.time}</span>
       </div>
-
     </div>
   </div>
-
 </div>
           
-          {/* Purchase Details */}
-<div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 p-4">
+          <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 p-4">
 
-  {/* Header */}
   <div className="flex items-center justify-between mb-4">
-    <h3 className="text-lg font-semibold flex items-center text-[#702082]">
-      <Utensils className="mr-2 h-5 w-5" />
-      Your Taco Bell Order
+    <h3 className="text-lg font-semibold flex items-center text-[#E32E00]">
+      <ShoppingBagIcon className="mr-2 h-5 w-5" />
+      Your Bikanervala Order
     </h3>
-
-    <span className="text-xs font-medium border border-[#702082] text-[#702082] px-2 py-1 rounded-full">
+    <span className="text-xs font-medium border border-[#E32E00] text-[#E32E00] px-2 py-1 rounded-full">
       {currentReceipt.items.length} items
     </span>
   </div>
 
-
-  {/* Items */}
   <div className="space-y-3">
-
     {currentReceipt.items.map((product) => (
+      <div key={product.id} className="bg-[#FDF1EC] rounded-xl p-3 border border-[#F6D9CC]">
 
-      <div
-        key={product.id}
-        className="bg-[#F7F2FA] rounded-xl p-3 border border-[#E8DDF2]"
-      >
-
-        {/* Item Header */}
-        <div
-          className="flex items-center justify-between cursor-pointer"
-          onClick={() => toggleProductExpansion(product.id)}
-        >
-
+        <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleProductExpansion(product.id)}>
           <div className="flex items-center flex-1">
-
-            <ChevronRight
-              className={`h-4 w-4 mr-2 text-[#702082] transition-transform duration-200 ${
-                expandedProducts.includes(product.id) ? "rotate-90" : ""
-              }`}
-            />
-
+            <ChevronRight className={`h-4 w-4 mr-2 text-[#E32E00] transition-transform duration-200 ${expandedProducts.includes(product.id) ? "rotate-90" : ""}`} />
             <div>
-              <div className="font-medium text-sm text-gray-900">
-                {product.name}
-              </div>
-
-              <div className="text-xs text-gray-500">
-                {product.category}
-              </div>
+              <div className="font-medium text-sm text-gray-900">{product.name}</div>
+              <div className="text-xs text-gray-500">{product.category} · {product.size}</div>
             </div>
-
           </div>
-
-
           <div className="text-right">
-
-            <div className="text-xs text-gray-500">
-              Qty {product.quantity}
-            </div>
-
-            <div className="font-semibold text-sm text-[#702082]">
-              ₹{(product.price * product.quantity).toFixed(2)}
-            </div>
-
+            <div className="text-xs text-gray-500">Qty {product.quantity}</div>
+            <div className="font-semibold text-sm text-[#E32E00]">₹{(product.price * product.quantity).toFixed(2)}</div>
           </div>
-
         </div>
 
-
-        {/* Expanded Product Info */}
         {expandedProducts.includes(product.id) && (
-
-          <div className="mt-3 pt-3 border-t border-[#E8DDF2] text-xs text-gray-600 grid grid-cols-2 gap-y-1">
-
+          <div className="mt-3 pt-3 border-t border-[#F6D9CC] text-xs text-gray-600 grid grid-cols-2 gap-y-1">
             <div>Item Code: {product.itemCode}</div>
-            <div>Size: {product.size}</div>
+            <div>Pack Size: {product.size}</div>
             <div>Base: ₹{product.baseAmount?.toFixed(2)}</div>
             <div>Tax: ₹{product.tax?.toFixed(2)}</div>
-
           </div>
-
         )}
 
-
-        {/* Item Feedback Toggle */}
         <div className="mt-3">
-
-          <button
-            onClick={() => toggleItemFeedback(product.id)}
-            className="text-xs text-[#A445B2] font-medium"
-          >
-            {expandedItemFeedback.includes(product.id)
-              ? "Hide item feedback"
-              : "Rate this taco moment"}
+          <button onClick={() => toggleItemFeedback(product.id)} className="text-xs text-[#FF7A3D] font-medium">
+            {expandedItemFeedback.includes(product.id) ? "Hide item feedback" : "Rate this mithai"}
           </button>
-
         </div>
 
-
-        {/* Item Feedback Panel */}
         {expandedItemFeedback.includes(product.id) && (
-
           <div className="mt-3 bg-white border border-gray-200 rounded-xl p-3">
-
-            {/* Rating */}
             <div className="flex justify-center gap-2 mb-3">
-
               {[1,2,3,4,5].map((star) => (
-
-                <button
-                  key={star}
-                  onClick={() => setItemRating(product.id, star)}
-                >
-
-                  <Star
-                    className={`h-5 w-5 ${
-                      star <= (itemFeedback[product.id]?.rating || 0)
-                        ? "fill-[#702082] text-[#702082]"
-                        : "text-gray-300"
-                    }`}
-                  />
-
+                <button key={star} onClick={() => setItemRating(product.id, star)}>
+                  <Star className={`h-5 w-5 ${star <= (itemFeedback[product.id]?.rating || 0) ? "fill-[#E32E00] text-[#E32E00]" : "text-gray-300"}`} />
                 </button>
-
               ))}
-
             </div>
-
-
-            {/* Tags */}
             <div className="flex flex-wrap gap-2 justify-center">
-
-              {["Taste","Freshness","Portion","Temperature"].map((tag) => {
-
-                const active =
-                  itemFeedback[product.id]?.tags?.includes(tag)
-
+              {["Taste","Freshness","Packaging","Value"].map((tag) => {
+                const active = itemFeedback[product.id]?.tags?.includes(tag)
                 return (
-
-                  <button
-                    key={tag}
-                    onClick={() => toggleItemTag(product.id, tag)}
-                    className={`text-[11px] px-2 py-1 rounded-full border ${
-                      active
-                        ? "bg-[#702082] text-white border-[#702082]"
-                        : "border-gray-200"
-                    }`}
-                  >
+                  <button key={tag} onClick={() => toggleItemTag(product.id, tag)}
+                    className={`text-[11px] px-2 py-1 rounded-full border ${active ? "bg-[#E32E00] text-white border-[#E32E00]" : "border-gray-200"}`}>
                     {tag}
                   </button>
-
                 )
-
               })}
-
             </div>
-
           </div>
-
         )}
-
       </div>
-
     ))}
-
   </div>
-
 
   {/* Totals */}
   <div className="mt-5 pt-4 border-t border-gray-200 space-y-2 text-sm">
-
-    <div className="flex justify-between">
-      <span className="text-gray-600">Subtotal</span>
-      <span>₹{currentReceipt.subtotal.toFixed(2)}</span>
-    </div>
-
-    <div className="flex justify-between">
-      <span className="text-gray-600">Tax</span>
-      <span>₹{currentReceipt.tax.toFixed(2)}</span>
-    </div>
-
+    <div className="flex justify-between"><span className="text-gray-600">Subtotal</span><span>₹{currentReceipt.subtotal.toFixed(2)}</span></div>
+    <div className="flex justify-between"><span className="text-gray-600">Tax (GST)</span><span>₹{currentReceipt.tax.toFixed(2)}</span></div>
     <div className="flex justify-between text-base font-semibold pt-2 border-t border-gray-200">
-      <span>Total Paid</span>
-      <span className="text-[#702082]">
-        ₹{currentReceipt.total.toFixed(2)}
-      </span>
+      <span>Total Paid</span><span className="text-[#E32E00]">₹{currentReceipt.total.toFixed(2)}</span>
     </div>
-
   </div>
-
 
   {/* Payment */}
   <div className="mt-5">
-
     <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 flex items-center justify-between">
-
       <div className="flex items-center">
-
-        <div className="w-8 h-8 bg-[#702082] rounded-lg flex items-center justify-center mr-3">
-          <svg
-            className="w-4 h-4 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+        <div className="w-8 h-8 bg-[#E32E00] rounded-lg flex items-center justify-center mr-3">
+          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
             <line x1="1" y1="10" x2="23" y2="10"></line>
           </svg>
         </div>
-
         <div>
-          <div className="text-xs font-medium">
-            Card Payment
-          </div>
-
-          <div className="text-xs text-gray-500">
-            **** **** **** 4532
-          </div>
+          <div className="text-xs font-medium">Card Payment</div>
+          <div className="text-xs text-gray-500">**** **** **** 4532</div>
         </div>
-
       </div>
-
-      <div className="text-sm font-semibold text-[#702082]">
-        ₹{currentReceipt.total.toFixed(2)}
-      </div>
-
+      <div className="text-sm font-semibold text-[#E32E00]">₹{currentReceipt.total.toFixed(2)}</div>
     </div>
-
   </div>
-
 </div>
           
-          {/* Join Big Bell Rewards Section */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
   {profileUpdateSuccess ? (
-
     <div className="text-center py-4 bg-green-50 rounded-xl border border-green-100">
-
       <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
         <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
         </svg>
       </div>
-
-      <div className="text-sm font-semibold text-gray-900 mb-1">
-        Welcome to Big Bell Rewards!
-      </div>
-
-      <div className="text-xs text-green-700 font-medium">
-        Your profile has been saved. Bells will now be added to your account.
-      </div>
-
+      <div className="text-sm font-semibold text-gray-900 mb-1">Welcome to Bikanervala Club!</div>
+      <div className="text-xs text-green-700 font-medium">Your profile has been saved. Club Points will now be credited on every purchase.</div>
     </div>
-
   ) : (
-
     <>
-      {/* Header */}
       <div className="flex items-center justify-between mb-3">
-
         <div className="flex items-center">
-
-          <div className="bg-[#702082] p-2 rounded-lg mr-3">
+          <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
             <User2 className="h-4 w-4 text-white" />
           </div>
-
           <div>
-            <div className="text-sm font-semibold text-gray-900">
-              Join Big Bell Rewards
-            </div>
-            <div className="text-xs text-gray-500">
-              Save your profile to earn Bells and unlock Taco Bell rewards
-            </div>
+            <div className="text-sm font-semibold text-gray-900">Join Bikanervala Club</div>
+            <div className="text-xs text-gray-500">Save your profile to earn Club Points and unlock exclusive rewards</div>
           </div>
-
         </div>
-
       </div>
 
-
-      {/* Form */}
       <div className="space-y-3">
-
         <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Full Name
-          </label>
-
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={profile.name}
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">Full Name</label>
+          <input type="text" placeholder="Your Name" value={profile.name}
             onChange={(e) => setProfile((prev) => ({ ...prev, name: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
-          />
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E32E00]" />
         </div>
-
-
         <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Email Address
-          </label>
-
-          <input
-            type="email"
-            placeholder="name@example.com"
-            value={profile.email}
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">Email Address</label>
+          <input type="email" placeholder="name@example.com" value={profile.email}
             onChange={(e) => setProfile((prev) => ({ ...prev, email: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
-          />
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E32E00]" />
         </div>
-
-
         <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Mobile Number
-          </label>
-
-          <input
-            type="tel"
-            placeholder="+91 ..."
-            value={profile.mobile}
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">Mobile Number</label>
+          <input type="tel" placeholder="+91 ..." value={profile.mobile}
             onChange={(e) => setProfile((prev) => ({ ...prev, mobile: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
-          />
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E32E00]" />
         </div>
-
       </div>
 
-
-      {/* CTA */}
-      <button
-        className="w-full mt-4 bg-[#702082] text-white h-11 text-xs font-semibold rounded-xl shadow-md transition active:scale-[0.98]"
-        onClick={handleProfileUpdate}
-      >
-        Save Profile & Start Earning Bells
+      <button className="w-full mt-4 bg-[#E32E00] text-white h-11 text-xs font-semibold rounded-xl shadow-md transition active:scale-[0.98]" onClick={handleProfileUpdate}>
+        Save Profile & Start Earning Points
       </button>
 
-
-      {/* Helper text */}
       <div className="text-[10px] text-gray-400 text-center mt-2">
-        By joining, you agree to receive Taco Bell offers and rewards updates.
+        By joining, you agree to receive Bikanervala offers and rewards updates.
       </div>
-
     </>
   )}
-
 </div>
-
           
     {/* Big Bell Rewards */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
-
   <div className="p-4">
 
-    {/* Header */}
     <div className="flex items-start mb-4">
-
-      <div className="w-10 h-10 bg-[#702082] rounded-xl flex items-center justify-center mr-3">
+      <div className="w-10 h-10 bg-[#E32E00] rounded-xl flex items-center justify-center mr-3">
         <Bell className="h-5 w-5 text-white" />
       </div>
-
       <div>
-        <div className="text-lg font-semibold text-gray-900">
-          Big Bell Rewards
-        </div>
-
-        <div className="text-xs text-gray-600">
-          Earn Bells on every Taco Bell order
-        </div>
+        <div className="text-lg font-semibold text-gray-900">Bikanervala Club</div>
+        <div className="text-xs text-gray-600">Earn Club Points on every purchase, in-store or online</div>
       </div>
-
     </div>
 
-
-    {/* Overview */}
     <div className="grid grid-cols-3 gap-3 mb-4">
-
-      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
-        <div className="text-lg font-semibold text-[#702082]">+1000</div>
-        <div className="text-xs text-gray-600">Bells Earned</div>
+      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
+        <div className="text-lg font-semibold text-[#E32E00]">+729</div>
+        <div className="text-xs text-gray-600">Points Earned</div>
       </div>
-
-      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
-        <div className="text-lg font-semibold text-[#702082]">4200</div>
-        <div className="text-xs text-gray-600">Total Bells</div>
+      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
+        <div className="text-lg font-semibold text-[#E32E00]">8,400</div>
+        <div className="text-xs text-gray-600">Total Points</div>
       </div>
-
-      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
-        <div className="text-lg font-semibold text-[#702082]">Rice Bowl</div>
-        <div className="text-xs text-gray-600">Next Reward</div>
+      <div className="bg-[#FDF1EC] rounded-xl p-3 text-center border border-[#F6D9CC]">
+        <div className="text-lg font-semibold text-[#E32E00]">Gold</div>
+        <div className="text-xs text-gray-600">Current Tier</div>
       </div>
-
     </div>
 
-
-    {/* Progress */}
-    <div className="bg-[#F7F2FA] rounded-xl p-4 border border-[#E8DDF2]">
-
+    <div className="bg-[#FDF1EC] rounded-xl p-4 border border-[#F6D9CC]">
       <div className="flex justify-between text-xs text-gray-600 mb-2">
-        <span>Reward Progress</span>
-        <span>4200 / 6000 Bells</span>
+        <span>Tier Progress</span>
+        <span>8,400 / 15,000 Points</span>
       </div>
-
       <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-[#702082] rounded-full"
-          style={{ width: "70%" }}
-        />
+        <div className="h-full bg-[#E32E00] rounded-full" style={{ width: "56%" }} />
       </div>
-
       <div className="text-xs text-gray-600 mt-2">
-        Only <span className="font-semibold text-[#702082]">1800 Bells</span> away from your next reward.
+        Only <span className="font-semibold text-[#E32E00]">6,600 points</span> away from Platinum tier.
       </div>
-
     </div>
 
-
-    {/* Reward Journey */}
     <div className="mt-4">
-
-      <div className="text-sm font-semibold text-gray-900 mb-2">
-        Reward Unlocks
-      </div>
-
+      <div className="text-sm font-semibold text-gray-900 mb-2">Tier Journey</div>
       <div className="flex items-center justify-between text-center text-xs">
-
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#702082] text-white flex items-center justify-center">
-            ✓
-          </div>
-          <div className="mt-1">Taco / Wrap</div>
-          <div className="text-[10px] text-gray-500">3000</div>
+          <div className="w-8 h-8 rounded-full bg-[#E32E00] text-white flex items-center justify-center">✓</div>
+          <div className="mt-1">Silver</div>
+          <div className="text-[10px] text-gray-500">Enroll</div>
         </div>
-
+        <div className="flex-1 h-[2px] bg-[#E32E00] mx-2"></div>
+        <div className="flex flex-col items-center">
+          <div className="w-8 h-8 rounded-full bg-[#E32E00] text-white flex items-center justify-center">✓</div>
+          <div className="mt-1">Gold</div>
+          <div className="text-[10px] text-gray-500">5,000</div>
+        </div>
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
-
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">
-            🍚
-          </div>
-          <div className="mt-1">Rice Bowl</div>
-          <div className="text-[10px] text-gray-500">6000</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#E32E00] text-[#E32E00] flex items-center justify-center">◆</div>
+          <div className="mt-1">Platinum</div>
+          <div className="text-[10px] text-gray-500">15,000</div>
         </div>
-
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
-
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">
-            🌮
-          </div>
-          <div className="mt-1">Big Bell Box</div>
-          <div className="text-[10px] text-gray-500">9000</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#E32E00] text-[#E32E00] flex items-center justify-center">💎</div>
+          <div className="mt-1">Diamond</div>
+          <div className="text-[10px] text-gray-500">30,000</div>
         </div>
-
       </div>
-
     </div>
 
-
-    {/* Info */}
     <div className="mt-4 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-      Earn <span className="font-semibold">1000 Bells</span> on orders above ₹350.  
-      Bells unlock rewards and expire after 6 months.
+      Earn <span className="font-semibold">1 Club Point for every ₹1</span> spent on non-discounted bills (excluding taxes). Points are worth ₹1 each and are valid for 12 months from the date of credit.
     </div>
 
-
-    {/* CTA */}
     <div className="mt-4">
-      <a
-        href="https://www.tacobell.co.in"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block w-full text-center bg-[#702082] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition"
-      >
-        View Big Bell Rewards
+      <a href="https://bikanervala.com/pages/loyalty" target="_blank" rel="noopener noreferrer"
+        className="block w-full text-center bg-[#E32E00] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition">
+        View Bikanervala Club
       </a>
     </div>
-
   </div>
-
 </div>
-          {/* Promo Banner Carousel */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden mx-3 mt-4 relative font-poppins">
+          
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden mx-3 mt-4 relative font-poppins">
 
-  <Carousel
-    className="w-full"
-    setApi={setPromoApi}
-    opts={{
-      loop: true,
-    }}
-  >
-
+  <Carousel className="w-full" setApi={setPromoApi} opts={{ loop: true }}>
     <CarouselContent>
 
-      {/* Banner 1 */}
+      {/* Banner 1 — Gifting Hampers */}
       <CarouselItem>
-        <div className="relative w-full aspect-[16/9]">
-
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute inset-0"
-          >
-            <Image
-              src="/images/design-mode/taco-banner-1.jpeg"
-              alt="Taco Bell Offer"
-              fill
-              className="object-contain"
-              priority
-            />
+        <div className="relative w-full aspect-square bg-[#FDF1EC]">
+          <a href="https://bikanervala.com/collections/gifting" target="_blank" rel="noopener noreferrer" className="absolute inset-0">
+            <Image src="/images/design-mode/hamper_1.png" alt="Bikanervala Gift Hampers" fill className="object-contain" priority />
           </a>
-
-          {/* CTA */}
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-4 right-4"
-          >
-            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
-              Order Now
-            </button>
+          <a href="https://bikanervala.com/collections/gifting" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4">
+            <button className="bg-[#E32E00] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">Shop Hampers</button>
           </a>
-
         </div>
       </CarouselItem>
 
-
-      {/* Banner 2 */}
+      {/* Banner 2 — Sweets */}
       <CarouselItem>
-        <div className="relative w-full aspect-[16/9]">
-
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute inset-0"
-          >
-            <Image
-              src="/images/design-mode/taco-banner-2.jpeg"
-              alt="Taco Bell Double Offer"
-              fill
-              className="object-contain"
-            />
+        <div className="relative w-full aspect-square bg-[#FDF1EC]">
+          <a href="https://bikanervala.com/collections/sweets" target="_blank" rel="noopener noreferrer" className="absolute inset-0">
+            <Image src="/images/design-mode/11._F3716__Khoya_Modak.png" alt="Bikanervala Fresh Sweets" fill className="object-contain" />
           </a>
-
-          {/* CTA */}
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-4 right-4"
-          >
-            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
-              Order Now
-            </button>
+          <a href="https://bikanervala.com/collections/sweets" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4">
+            <button className="bg-[#E32E00] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">Shop Sweets</button>
           </a>
-
-        </div>
-      </CarouselItem>
-
-
-      {/* Banner 3 */}
-      <CarouselItem>
-        <div className="relative w-full aspect-[16/9]">
-
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute inset-0"
-          >
-            <Image
-              src="/images/design-mode/taco-banner-3.jpeg"
-              alt="Taco Bell Meal Mania"
-              fill
-              className="object-contain"
-            />
-          </a>
-
-          {/* CTA */}
-          <a
-            href="https://www.tacobell.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-4 right-4"
-          >
-            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
-              Order Now
-            </button>
-          </a>
-
         </div>
       </CarouselItem>
 
     </CarouselContent>
 
-
-    {/* Pagination Dots */}
     <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
-      {[0, 1, 2].map((index) => (
-        <button
-          key={index}
-          onClick={() => promoApi?.scrollTo(index)}
-          className={`h-1.5 rounded-full transition-all duration-300 ${
-            currentSlide === index
-              ? "w-5 bg-[#702082]"
-              : "w-1.5 bg-white/70"
-          }`}
-        />
+      {[0, 1].map((index) => (
+        <button key={index} onClick={() => promoApi?.scrollTo(index)}
+          className={`h-1.5 rounded-full transition-all duration-300 ${currentSlide === index ? "w-5 bg-[#E32E00]" : "w-1.5 bg-white/70"}`} />
       ))}
     </div>
-
   </Carousel>
-
 </div>
           
           
-      {/* Feedback Section */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
-
+      <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
   {feedbackSubmitted ? (
-
     <div className="text-center py-6 bg-green-50 rounded-xl border border-green-100">
-
       <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
         <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
         </svg>
       </div>
-
-      <div className="text-sm font-semibold text-gray-900 mb-1">
-        Thanks for your feedback!
-      </div>
-
-      <div className="text-xs text-gray-500">
-        Your input helps us improve every Taco Bell experience.
-      </div>
-
+      <div className="text-sm font-semibold text-gray-900 mb-1">Thanks for your feedback!</div>
+      <div className="text-xs text-gray-500">Your input helps us improve every Bikanervala experience.</div>
     </div>
-
   ) : (
-
     <div className="space-y-4">
-
-      {/* Header */}
       <div className="flex items-center justify-between">
-
         <div className="flex items-center">
-
-          <div className="bg-[#702082] p-2 rounded-lg mr-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              className="w-4 h-4 text-white"
-              fill="currentColor"
-            >
+          <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4 text-white" fill="currentColor">
               <path d="M11.5 2C7 2 3.5 5.3 3.5 9.5c0 2.4 1.2 4.4 3.1 5.7L6 22l5.1-2.6c.5.1 1 .1 1.5.1 4.5 0 8-3.3 8-7.5S16 2 11.5 2z"/>
             </svg>
           </div>
-
-          <h3 className="text-base font-semibold text-gray-900">
-            Rate Your Taco Bell Experience
-          </h3>
-
+          <h3 className="text-base font-semibold text-gray-900">Rate Your Bikanervala Experience</h3>
         </div>
-
       </div>
 
-
-      {/* Taco Rating */}
       <div className="flex justify-center gap-3 py-1">
-
-        {[1,2,3,4,5].map((taco) => (
-
-          <button
-            key={taco}
-            onClick={() => {
-              setRating(taco)
-              setSelectedTags([])
-            }}
-            className="transition-transform active:scale-90"
-          >
-
-            <span
-              className={`text-3xl ${
-                taco <= rating ? "opacity-100" : "opacity-30"
-              }`}
-            >
-              🌮
-            </span>
-
+        {[1,2,3,4,5].map((sweet) => (
+          <button key={sweet} onClick={() => { setRating(sweet); setSelectedTags([]) }} className="transition-transform active:scale-90">
+            <span className={`text-3xl ${sweet <= rating ? "opacity-100" : "opacity-30"}`}>🍬</span>
           </button>
-
         ))}
-
       </div>
 
-
-      {/* Dynamic Feedback Chips */}
       {rating > 0 && (
-
         <div className="space-y-2">
-
-          <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">
-            Tell us more about your order
-          </div>
-
+          <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">Tell us more about your order</div>
           <div className="flex flex-wrap gap-2">
-
             {(rating >= 4
-              ? [
-                  "Great taste",
-                  "Hot & fresh",
-                  "Fast service",
-                  "Good value",
-                  "Well packaged",
-                  "Order was accurate",
-                ]
-              : [
-                  "Food was cold",
-                  "Slow service",
-                  "Wrong order",
-                  "Taste could be better",
-                  "Packaging issue",
-                  "Not good value",
-                ]
+              ? ["Great taste","Fresh & authentic","Well packaged","Good value","Fast service","Order was accurate"]
+              : ["Not fresh","Slow service","Wrong order","Taste could be better","Packaging issue","Not good value"]
             ).map((item) => (
-
-              <button
-                key={item}
-                onClick={() =>
-                  setSelectedTags((prev) =>
-                    prev.includes(item)
-                      ? prev.filter((tag) => tag !== item)
-                      : [...prev, item]
-                  )
-                }
-                className={`text-[11px] px-3 py-1.5 rounded-full border transition ${
-                  selectedTags.includes(item)
-                    ? "bg-[#702082] text-white border-[#702082]"
-                    : "border-gray-200 bg-gray-50"
-                }`}
-              >
+              <button key={item}
+                onClick={() => setSelectedTags((prev) => prev.includes(item) ? prev.filter((tag) => tag !== item) : [...prev, item])}
+                className={`text-[11px] px-3 py-1.5 rounded-full border transition ${selectedTags.includes(item) ? "bg-[#E32E00] text-white border-[#E32E00]" : "border-gray-200 bg-gray-50"}`}>
                 {item}
               </button>
-
             ))}
-
           </div>
-
         </div>
-
       )}
 
-
-      {/* Optional Comment */}
       <div className="space-y-1">
-
-        <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-          Additional Feedback (Optional)
-        </label>
-
-        <textarea
-          rows={3}
-          placeholder="Tell us about your Taco Bell order"
-          className="w-full p-3 text-xs border border-gray-200 rounded-xl focus:ring-1 focus:ring-[#702082] focus:border-[#702082] outline-none resize-none"
-          value={feedbackText}
-          onChange={(e) => setFeedbackText(e.target.value)}
-        />
-
+        <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">Additional Feedback (Optional)</label>
+        <textarea rows={3} placeholder="Tell us about your Bikanervala order"
+          className="w-full p-3 text-xs border border-gray-200 rounded-xl focus:ring-1 focus:ring-[#E32E00] focus:border-[#E32E00] outline-none resize-none"
+          value={feedbackText} onChange={(e) => setFeedbackText(e.target.value)} />
       </div>
 
-
-      {/* Submit Button */}
-      <button
-        className="w-full bg-[#702082] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]"
-        onClick={handleFeedbackSubmit}
-        disabled={!rating}
-      >
+      <button className="w-full bg-[#E32E00] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]"
+        onClick={handleFeedbackSubmit} disabled={!rating}>
         Submit Feedback
       </button>
 
-
-      <p className="text-[10px] text-center text-gray-400">
-        Your feedback helps Taco Bell improve every order.
-      </p>
-
+      <p className="text-[10px] text-center text-gray-400">Your feedback helps Bikanervala improve every order.</p>
     </div>
-
   )}
-
 </div>
           
-{/* Just For You - Coupon Section */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
-  {/* Header */}
   <div className="flex items-center justify-between mb-4">
-
     <div className="flex items-center">
-
-      <div className="bg-[#702082] p-2 rounded-lg mr-3">
+      <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
         <Sparkles className="h-4 w-4 text-white" />
       </div>
-
-      <h3 className="text-base font-semibold text-gray-900">
-        Just for You
-      </h3>
-
+      <h3 className="text-base font-semibold text-gray-900">Just for You</h3>
     </div>
-
   </div>
 
-
-  {/* Inline Toast */}
   {couponToast && (
     <div className="mb-3 text-center text-xs text-green-700 bg-green-50 border border-green-100 rounded-lg py-2">
       ✓ Coupon copied
     </div>
   )}
 
-
   <div className="space-y-3">
 
-    {/* Coupon 1 */}
-    <button
-      onClick={() => copyCoupon("VALUE99")}
-      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
-    >
-
+    <button onClick={() => copyCoupon("SWEET100")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
       <div className="flex items-center justify-between">
-
         <div>
-          <h4 className="text-sm font-semibold text-gray-900">
-            Everyday Best Value Deals
-          </h4>
-
-          <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#702082]">VALUE99</span>
-          </p>
+          <h4 className="text-sm font-semibold text-gray-900">Flat ₹100 Off on Fresh Sweets</h4>
+          <p className="text-[11px] text-gray-500">On orders above ₹1499 · Use code <span className="font-bold text-[#E32E00]">SWEET100</span></p>
         </div>
-
-        <div className="text-xl">🌮</div>
-
+        <div className="text-xl">🍡</div>
       </div>
-
     </button>
 
-
-    {/* Coupon 2 */}
-    <button
-      onClick={() => copyCoupon("BIGBELL")}
-      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
-    >
-
+    <button onClick={() => copyCoupon("FREESHIP")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
       <div className="flex items-center justify-between">
-
         <div>
-          <h4 className="text-sm font-semibold text-gray-900">
-            Big Bell Box Combo Offer
-          </h4>
-
-          <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#702082]">BIGBELL</span>
-          </p>
+          <h4 className="text-sm font-semibold text-gray-900">Free Delivery Across India</h4>
+          <p className="text-[11px] text-gray-500">On orders above ₹1000 · Use code <span className="font-bold text-[#E32E00]">FREESHIP</span></p>
         </div>
-
-        <div className="text-xl">🍱</div>
-
+        <div className="text-xl">🚚</div>
       </div>
-
     </button>
 
-
-    {/* Coupon 3 */}
-    <button
-      onClick={() => copyCoupon("MEALDEAL")}
-      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
-    >
-
+    <button onClick={() => copyCoupon("HAMPER15")} className="w-full bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl p-3 text-left active:scale-[0.99]">
       <div className="flex items-center justify-between">
-
         <div>
-          <h4 className="text-sm font-semibold text-gray-900">
-            Big Saving Combo Meals
-          </h4>
-
-          <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#702082]">MEALDEAL</span>
-          </p>
+          <h4 className="text-sm font-semibold text-gray-900">Festive Hamper Special</h4>
+          <p className="text-[11px] text-gray-500">15% off curated gift hampers · Use code <span className="font-bold text-[#E32E00]">HAMPER15</span></p>
         </div>
-
-        <div className="text-xl">🥙</div>
-
+        <div className="text-xl">🎁</div>
       </div>
-
     </button>
 
   </div>
 
-
-  {/* CTA */}
-  <a
-    href="https://www.tacobell.co.in/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button className="w-full mt-4 bg-[#702082] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]">
-      Order Taco Bell
+  <a href="https://bikanervala.com/" target="_blank" rel="noopener noreferrer">
+    <button className="w-full mt-4 bg-[#E32E00] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]">
+      Order from Bikanervala
     </button>
   </a>
 
-
-  <p className="mt-2 text-[9px] text-center text-gray-400">
-    Tap a coupon to copy the code. Offers may vary by location.
-  </p>
-
+  <p className="mt-2 text-[9px] text-center text-gray-400">Tap a coupon to copy the code. Offers may vary by location.</p>
 </div>
           
-         {/* Receipt Actions */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
-
+         <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
   <div className="grid grid-cols-3 gap-3">
-
-    {/* Order History */}
-    <button
-      ref={historyButtonRef}
-      onClick={handleTransactionHistoryOpen}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <History className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Orders
-      </span>
+    <button ref={historyButtonRef} onClick={handleTransactionHistoryOpen}
+      className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <History className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Orders</span>
     </button>
 
-
-    {/* Email Receipt */}
-    <button
-      onClick={handleEmailReceipt}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <Mail className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Email
-      </span>
+    <button onClick={handleEmailReceipt}
+      className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <Mail className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Email</span>
     </button>
 
-
-    {/* Download Receipt */}
-    <button
-      onClick={handleDownloadReceipt}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <Download className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Download
-      </span>
+    <button onClick={handleDownloadReceipt}
+      className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <Download className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Download</span>
     </button>
-
   </div>
-
 </div>
           
-       {/* Need Help Section */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
-
-  {/* Header */}
+       <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
   <div className="flex items-center mb-3">
-
-    <div className="bg-[#702082] p-2 rounded-lg mr-3">
+    <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
       <Send className="h-4 w-4 text-white" />
     </div>
-
-    <h3 className="text-sm font-semibold text-gray-900">
-      Taco Bell Support
-    </h3>
-
+    <h3 className="text-sm font-semibold text-gray-900">Bikanervala Support</h3>
   </div>
-
 
   <div className="grid grid-cols-3 gap-3">
-
-    {/* Chat */}
-    <button
-      onClick={handleWhatsApp}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <MessageSquare className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Chat
-      </span>
+    <button onClick={handleWhatsApp} className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <MessageSquare className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Chat</span>
     </button>
-
-
-    {/* Call */}
-    <button
-      onClick={handleCall}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <Phone className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Call
-      </span>
+    <button onClick={handleCall} className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <Phone className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Call</span>
     </button>
-
-
-    {/* Email */}
-    <button
-      onClick={handleEmail}
-      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
-    >
-      <Mail className="h-5 w-5 text-[#702082] mb-1" />
-      <span className="text-[11px] font-medium text-gray-700">
-        Email
-      </span>
+    <button onClick={handleEmail} className="flex flex-col items-center justify-center bg-[#FDF1EC] border border-[#F6D9CC] rounded-xl py-3 active:scale-[0.98]">
+      <Mail className="h-5 w-5 text-[#E32E00] mb-1" />
+      <span className="text-[11px] font-medium text-gray-700">Email</span>
     </button>
-
   </div>
-
 </div>
           
-      {/* Social Media & Store Details */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
+      <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
-  {/* Header */}
   <div className="flex items-center mb-4">
-
-    <div className="bg-[#702082] p-2 rounded-lg mr-3">
+    <div className="bg-[#E32E00] p-2 rounded-lg mr-3">
       <Share2 className="h-4 w-4 text-white" />
     </div>
-
-    <h3 className="text-sm font-semibold text-gray-900">
-      Stay Connected
-    </h3>
-
+    <h3 className="text-sm font-semibold text-gray-900">Stay Connected</h3>
   </div>
 
-
-  {/* Social Links */}
   <div className="flex justify-center space-x-6 mb-4">
-
-    {/* Instagram */}
-    <button
-      onClick={() => handleSocialLink("https://www.instagram.com/tacobellindia")}
-      className="flex flex-col items-center"
-    >
+    <button onClick={() => handleSocialLink("https://www.instagram.com/bikanervala.in/")} className="flex flex-col items-center">
       <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center mb-1">
         <Instagram className="h-4 w-4 text-white" />
       </div>
       <span className="text-[11px] font-medium text-gray-700">Instagram</span>
     </button>
 
-
-    {/* Facebook */}
-    <button
-      onClick={() => handleSocialLink("https://www.facebook.com/TacoBellIndia")}
-      className="flex flex-col items-center"
-    >
+    <button onClick={() => handleSocialLink("https://www.facebook.com/bikanervala.in/")} className="flex flex-col items-center">
       <div className="w-9 h-9 rounded-full bg-[#1877F2] flex items-center justify-center mb-1">
         <Facebook className="h-4 w-4 text-white" />
       </div>
       <span className="text-[11px] font-medium text-gray-700">Facebook</span>
     </button>
 
-
-    {/* Website */}
-    <button
-      onClick={() => handleSocialLink("https://www.tacobell.co.in")}
-      className="flex flex-col items-center"
-    >
-      <div className="w-9 h-9 rounded-full bg-[#702082] flex items-center justify-center mb-1">
+    <button onClick={() => handleSocialLink("https://bikanervala.com")} className="flex flex-col items-center">
+      <div className="w-9 h-9 rounded-full bg-[#E32E00] flex items-center justify-center mb-1">
         <ExternalLink className="h-4 w-4 text-white" />
       </div>
       <span className="text-[11px] font-medium text-gray-700">Website</span>
     </button>
-
   </div>
 
-
   {/* Store Location */}
-<div className="text-xs text-gray-600 text-center mb-3 bg-gray-50 p-3 rounded-xl">
+  <div className="text-xs text-gray-600 text-center mb-3 bg-gray-50 p-3 rounded-xl">
+    <button onClick={() => setShowStoreLocation(!showStoreLocation)}
+      className="w-full flex items-center justify-center mb-2 hover:text-[#E32E00] transition-colors">
+      <MapPin className="h-3 w-3 mr-1 text-[#E32E00]" />
+      <span className="font-semibold text-[#E32E00]">
+        Bikanervala – {currentReceipt.branch} {showStoreLocation ? "▲" : "▼"}
+      </span>
+    </button>
 
-  <button
-    onClick={() => setShowStoreLocation(!showStoreLocation)}
-    className="w-full flex items-center justify-center mb-2 hover:text-[#702082] transition-colors"
-  >
-    <MapPin className="h-3 w-3 mr-1 text-[#702082]" />
-    <span className="font-semibold text-[#702082]">
-      Taco Bell SJR Koramangala, Bengaluru {showStoreLocation ? "▲" : "▼"}
-    </span>
-  </button>
-
-  {showStoreLocation && (
-    <div className="space-y-0.5">
-
-      <p className="font-semibold text-gray-900">
-        Taco Bell – SJR Koramangala
-      </p>
-
-      <p>Sony World Junction Plot 36</p>
-
-      <p>100 Feet Rd, Koramangala</p>
-
-      <p>Bengaluru, Karnataka 560095</p>
-
-      <p>India</p>
-
-      <p className="mt-2 text-[10px]">
-        GSTIN: 29ABCDE1234F1Z5
-      </p>
-
-      <p className="mt-1 text-[#702082] font-semibold">
-        Store Manager: {currentReceipt.associate}
-      </p>
-
-    </div>
-  )}
-
-</div>
+    {showStoreLocation && (
+      <div className="space-y-0.5">
+        <p className="font-semibold text-gray-900">Bikanervala Foods Pvt. Ltd.</p>
+        <p>A-28, Lawrence Road Industrial Area</p>
+        <p>Keshav Puram, Shakurpur</p>
+        <p>New Delhi, Delhi 110035</p>
+        <p>India</p>
+        <p className="mt-2 text-[10px]">GSTIN: 07XXXXX0000X1Z5</p>
+        <p className="mt-1 text-[#E32E00] font-semibold">Store Manager: {currentReceipt.associate}</p>
+      </div>
+    )}
+  </div>
 
   {/* Terms */}
-  <button
-    className="w-full text-xs text-gray-500 hover:text-[#702082] h-6 font-medium"
-    onClick={() => setShowTerms(!showTerms)}
-  >
+  <button className="w-full text-xs text-gray-500 hover:text-[#E32E00] h-6 font-medium" onClick={() => setShowTerms(!showTerms)}>
     Terms & Conditions {showTerms ? "▲" : "▼"}
   </button>
 
   {showTerms && (
     <div className="text-[11px] text-gray-500 mt-2 space-y-1 px-2 font-medium">
-
-      <p>• Taco Bell offers and coupons are subject to availability.</p>
-      <p>• Offers may vary by store location.</p>
+      <p>• Offers and coupons are subject to availability and location.</p>
       <p>• Prices include applicable GST.</p>
-      <p>• For support visit www.tacobell.co.in.</p>
-
+      <p>• Bikanervala Club Points are non-transferable and valid for 12 months from credit.</p>
+      <p>• For support visit www.bikanervala.com.</p>
     </div>
   )}
 
-
-  {/* Powered by RDEP */}
   <div className="text-center mt-3 pt-3 border-t border-gray-100">
-
     <div className="flex items-center justify-center space-x-1">
-
-      <span className="text-xs text-gray-400 font-medium">
-        Powered by
-      </span>
-
-      <a
-        href="https://www.rdep.io"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center"
-      >
-        <Image
-          src="/images/design-mode/RDEP%20cropped.png"
-          alt="RDEP"
-          width={60}
-          height={16}
-          className="object-contain"
-        />
+      <span className="text-xs text-gray-400 font-medium">Powered by</span>
+      <a href="https://www.rdep.io" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+        <Image src="/images/design-mode/RDEP%20cropped.png" alt="RDEP" width={60} height={16} className="object-contain" />
       </a>
-
     </div>
-
   </div>
-
 </div>
           <div id="height-marker" style={{ height: "1px" }} />
         </div>
