@@ -874,7 +874,7 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
   )}
 </div>
           
-    {/* Bikanervala Loaylty */}
+    {/* Bikanervala Loyalty */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
   <div className="p-4">
 
@@ -884,87 +884,92 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
         <Bell className="h-5 w-5 text-white" />
       </div>
       <div>
-        <div className="text-lg font-semibold text-gray-900">Bikanervala Club</div>
-        <div className="text-xs text-gray-600">India's largest restaurant retail loyalty programme</div>
+        <div className="text-lg font-semibold text-gray-900">
+          Bikanervala Club
+        </div>
+        <div className="text-xs text-gray-600">
+          Earn and redeem loyalty points every time you dine or shop.
+        </div>
       </div>
     </div>
 
-    {/* Points from this order */}
-    <div className="bg-[#FDF1EC] rounded-xl p-4 border border-[#F6D9CC] mb-4">
+    {/* Points earned */}
+    <div className="bg-[#FDF1EC] rounded-xl p-4 border border-[#F6D9CC] mb-5">
       <div className="flex items-center justify-between">
         <div>
-          <div className="text-xs text-gray-600">Points earned on this order</div>
-          <div className="text-2xl font-semibold text-[#E32E00] mt-0.5">
+          <div className="text-xs text-gray-600">
+            Points earned on this order
+          </div>
+          <div className="text-2xl font-semibold text-[#E32E00] mt-1">
             +{Math.round(currentReceipt.subtotal)}
           </div>
-        </div>
-        <div className="text-right">
-          <div className="text-xs text-gray-600">Your tier</div>
-          <div className="inline-flex items-center gap-1 mt-1 bg-white border border-[#E32E00] text-[#E32E00] text-xs font-semibold px-2.5 py-1 rounded-full">
-            🥇 Gold
+          <div className="text-[11px] text-gray-500 mt-1">
+            These points will be credited to your registered account shortly.
           </div>
         </div>
+
+        <div className="bg-white border border-[#E32E00] text-[#E32E00] text-xs font-semibold px-3 py-2 rounded-full">
+          Loyalty Member
+        </div>
       </div>
-      <div className="text-[10px] text-gray-500 mt-2">
-        Calculated on the pre-tax bill value, as per Bikanervala Club rules.
+
+      <div className="text-[10px] text-gray-500 mt-3 border-t border-[#F6D9CC] pt-2">
+        Points are calculated on the pre-tax bill value as per Bikanervala Club rules.
       </div>
     </div>
 
-    {/* Tier ladder — no invented thresholds, just the real tier names */}
-    <div className="mb-4">
-      <div className="text-sm font-semibold text-gray-900 mb-2">Membership Tiers</div>
-      <div className="text-[11px] text-gray-500 mb-3">
-        Your tier is determined by your total spend across Bikanervala outlets and websites.
-      </div>
-      <div className="flex items-center justify-between text-center text-xs">
-        <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#E32E00] text-white flex items-center justify-center">✓</div>
-          <div className="mt-1">Silver</div>
-        </div>
-        <div className="flex-1 h-[2px] bg-[#E32E00] mx-2"></div>
-        <div className="flex flex-col items-center">
-          <div className="w-9 h-9 rounded-full bg-[#E32E00] text-white flex items-center justify-center ring-2 ring-offset-2 ring-[#E32E00]">🥇</div>
-          <div className="mt-1 font-semibold">Gold</div>
-        </div>
-        <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
-        <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">◆</div>
-          <div className="mt-1 text-gray-400">Platinum</div>
-        </div>
-        <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
-        <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">💎</div>
-          <div className="mt-1 text-gray-400">Diamond</div>
-        </div>
-      </div>
-    </div>
-
-    {/* How it works — pulled straight from their published T&Cs */}
+    {/* How it works */}
     <div className="space-y-2 mb-4">
       <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-        <span className="text-[#E32E00] font-semibold shrink-0">1 Point = ₹1</span>
-        <span>Earned on non-discounted bills, calculated on value excluding tax, delivery, and packing charges.</span>
+        <span className="text-[#E32E00] font-semibold shrink-0">
+          1 Point = ₹1
+        </span>
+        <span>
+          Earned on non-discounted bills, calculated on value excluding tax,
+          delivery, and packing charges.
+        </span>
       </div>
+
       <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-        <span className="text-[#E32E00] font-semibold shrink-0">No minimum</span>
-        <span>Redeem points for any amount starting from ₹1 — no minimum or maximum limit.</span>
+        <span className="text-[#E32E00] font-semibold shrink-0">
+          No minimum
+        </span>
+        <span>
+          Redeem points for any amount starting from ₹1 with no minimum or
+          maximum redemption limit.
+        </span>
       </div>
+
       <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-        <span className="text-[#E32E00] font-semibold shrink-0">12-month validity</span>
-        <span>Points lapse automatically 12 months after the date of credit if unused.</span>
+        <span className="text-[#E32E00] font-semibold shrink-0">
+          12-month validity
+        </span>
+        <span>
+          Points expire automatically 12 months after the date of credit if
+          they remain unused.
+        </span>
       </div>
+
       <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-        <span className="text-[#E32E00] font-semibold shrink-0">Mobile-linked</span>
-        <span>Just quote your registered mobile number at billing to earn or redeem — no card, no app required.</span>
+        <span className="text-[#E32E00] font-semibold shrink-0">
+          Mobile-linked
+        </span>
+        <span>
+          Simply share your registered mobile number during billing to earn or
+          redeem points. No physical card or app is required.
+        </span>
       </div>
     </div>
 
-    <div>
-      <a href="https://bikanervala.com/pages/loyalty" target="_blank" rel="noopener noreferrer"
-        className="block w-full text-center bg-[#E32E00] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition">
-        View Bikanervala Club Terms
-      </a>
-    </div>
+    <a
+      href="https://bikanervala.com/pages/loyalty"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full text-center bg-[#E32E00] text-white rounded-xl py-2.5 text-sm font-medium hover:opacity-90 transition"
+    >
+      View Bikanervala Club Terms
+    </a>
+
   </div>
 </div>
             {/* Bikanervala Promo Banners */}
@@ -1034,13 +1039,26 @@ body{font-family:'Poppins',sans-serif;font-size:14px;color:#111;background:#fff;
         </div>
       </div>
 
-      <div className="flex justify-center gap-3 py-1">
-        {[1,2,3,4,5].map((sweet) => (
-          <button key={sweet} onClick={() => { setRating(sweet); setSelectedTags([]) }} className="transition-transform active:scale-90">
-            <span className={`text-3xl ${sweet <= rating ? "opacity-100" : "opacity-30"}`}>🍬</span>
-          </button>
-        ))}
-      </div>
+     <div className="flex justify-center gap-3 py-1">
+  {[1, 2, 3, 4, 5].map((star) => (
+    <button
+      key={star}
+      onClick={() => {
+        setRating(star)
+        setSelectedTags([])
+      }}
+      className="transition-transform active:scale-90"
+    >
+      <Star
+        className={`h-8 w-8 transition-colors ${
+          star <= rating
+            ? "fill-[#E32E00] text-[#E32E00]"
+            : "text-gray-300"
+        }`}
+      />
+    </button>
+  ))}
+</div>
 
       {rating > 0 && (
         <div className="space-y-2">
